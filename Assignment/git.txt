@@ -1,0 +1,30 @@
+From Chinmay Deshpande to Everyone:  09:58 PM
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+
+
+
+git config --global user.name "Your Name"
+git init
+git status
+git add .
+git add filename
+git commit -m “my msg”
+git log
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

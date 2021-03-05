@@ -1,0 +1,115 @@
+// Program 1:   Write a JavaScript function that accepts a string as a parameter and find the longest word within the string.
+      
+var largestWord = prompt("Enter the string...")
+function findLargeString(string)
+{
+    var str = string.split(" ");
+    var longest = 0;
+    var word;
+    for ( var i = 0; i < str.length; i++)
+    {
+        if(str[i].length > longest)
+        {
+            longest = str[i].length;
+            word = str[i]
+        }
+    }
+    return word;
+}
+document.write(`<b>Largest word in this String is: ${findLargeString(largestWord )} </b>`);
+
+
+
+// Program 2:  Create a function that takes two numbers and a mathematical operator + - * / and will perform a calculation with the given numbers. 
+
+var a = parseInt(prompt("Enter the first Numbers..."));
+var b = parseInt(prompt("Enter the second Numbers..."));
+ 
+function add()
+{
+    return a+b ;
+}
+
+function sub()
+{
+    return a-b ;
+}
+
+function multi()
+{
+    return a*b ;
+}
+
+function div()
+{
+    return a/b ;
+}
+
+
+document.write(`<b> Addition:  ${add()} </b><br>`);
+document.write(`<b> Substraction:  ${sub()} </b><br>`);
+document.write(`<b> Multiplication:  ${multi()} </b><br>`);
+document.write(`<b> Division:  ${div()} </b>`);
+
+
+
+
+
+// // Program 3:   Write a JavaScript function that accepts a string as a parameter and counts the number of vowels within the string.
+
+var findVowels = prompt("Enter some string..")
+
+function getVowels(str)
+{
+    var vowelCount = 0;
+    var string = str.toString();
+    for(var i = 0; i< string.length; i++)
+    {
+        if(string.charAt(i) == 'a' || string.charAt(i) == 'e' || 
+            string.charAt(i) == 'i' || string.charAt(i) == 'o' || string.charAt(i) == 'u')
+        {
+            vowelCount += 1;
+
+        }
+    }
+    return vowelCount;
+}
+document.write(`<b> Vowels in this String is:  ${getVowels(findVowels)}</b>`);
+
+
+
+
+ // // Program 4:  Write a program that accepts two arguments right and left as number and print numbers between right and left.
+
+ var right = parseInt(prompt("Enter the right Number..."));
+ var left = parseInt(prompt("Enter the left Number..."));
+
+ function numbers()
+ {
+    
+ for(var i = right; i <= left; i++)
+ {
+    
+    document.write(`<b>${i} </b><br>`);
+ }
+return 0;
+}
+
+
+numbers();
+
+
+// // Program 5: Write function expression that accepts two arguments firstName and lastName and return fullName.
+
+var firstName = prompt("Enter the right Number...");
+var lastName = prompt("Enter the left Number...");
+
+function fullName()
+{
+    return (firstName + lastName);
+}
+
+document.write(`<b>Full Name is: ${fullName(firstName,lastName)} </b>`)
+
+
+

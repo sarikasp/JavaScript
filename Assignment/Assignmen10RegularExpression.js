@@ -1,0 +1,221 @@
+// // Program 1:
+
+// function is_creditCard(str)
+// {
+//  regexp = /^(?:(4[0-9]{12}(?:[0-9]{3})?)|(5[1-5][0-9]{14})|(6(?:011|5[0-9]{2})[0-9]{12})|(3[47][0-9]{13})|(3(?:0[0-5]|[68][0-9])[0-9]{11})|((?:2131|1800|35[0-9]{3})[0-9]{11}))$/;
+  
+//         if (regexp.test(str))
+//           {
+//             return true;
+//           }
+//         else
+//           {
+//             return false;
+//           }
+// }
+
+// console.log(is_creditCard("378282246310006"));
+
+// console.log(is_creditCard("37828224630006"));
+
+// Pogram 2:
+
+
+// function is_space(str)
+// {
+//     regexp = /\s/g;
+//     if (regexp.test(str))
+//     {
+//         return true;
+//     }
+//     else
+//     {
+//         return false;
+//     }
+// }
+
+// console.log(is_space("  Asma"));
+
+// console.log(is_space("Gauri"));
+
+
+// function is_space(str)
+// {
+//     regexp = /^\s+|\s+$/;
+//     if (regexp.test(str))
+//     {
+//         return true;
+//     }
+//     else
+//     {
+//         return false;
+//     }
+// }
+
+// document.write(`<h4> ${is_space("  Asma")} </h4>`);
+
+// document.write(`<h4> ${is_space("Gauri")} </h4>`);
+
+
+
+
+// // Program 3:
+
+// function valid_email(str)
+// {
+//     var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+//     if(mailformat.test(str))
+//     {  
+//         document.write(`<h4>Valid email address!</h4>`);  
+//     }  
+//     else  
+//     {  
+//         document.write(`<h4>You have entered an invalid email address!</h4>`);      
+//     }
+// }
+
+// valid_email('me-info@example.com');
+// valid_email('me-infoexample.com');
+
+
+
+
+// // Program 4:
+
+// function is_number(str)
+// {
+//     //regexp =  /^([a-zA-Z0-9]+)$/;  // or
+//     //regexp = /[A-Z]{1}/i;          // or
+//     regexp = /\d{1}/
+
+//     if (regexp.test(str))
+//    {
+//         return true;
+//     }
+//     else
+//     {
+//         return false;
+//     }
+// }
+
+// document.write(`<h4> ${is_number("admin123")} </h4>`);
+// document.write(`<h4> ${is_number("Gauri98")} </h4>`);
+// document.write(`<h4> ${is_number("Asma")} </h4>`);
+
+// // Program 5 :
+
+// function is_IP(str)
+// {
+//  regexp =  /^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$|^(([a-zA-Z]|[a-zA-Z][a-zA-Z0-9\-]*[a-zA-Z0-9])\.)*([A-Za-z]|[A-Za-z][A-Za-z0-9\-]*[A-Za-z0-9])$|^\s*((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:)))(%.+)?\s*$/;
+  
+//         if (regexp.test(str))
+//           {
+//             return true;
+//           }
+//         else
+//           {
+//             return false;
+//           }
+// }
+
+// document.write(`<h4> ${is_IP('198.156.23.5')} </h4>`);
+// document.write(`<h4> ${is_IP("172.16.0.1")} </h4>`);
+
+// // Program 6 :
+
+// function is_ukPostCode(str)
+// {
+//  regexp = /^[A-Z]{1,2}[0-9RCHNQ][0-9A-Z]?\s?[0-9][ABD-HJLNP-UW-Z]{2}$|^[A-Z]{2}-?[0-9]{4}$/;
+  
+//         if (regexp.test(str))
+//           {
+//             return true;
+//           }
+//         else
+//           {
+//             return false;
+//           }
+// }
+// document.write(`<h4> ${is_ukPostCode("B294HJ")} </h4>`);
+
+// document.write(`<h4> ${is_ukPostCode("7892")} </h4>`);
+
+// // Program 7:
+
+// function thousands_separators(num)
+//   {
+//     var num_parts = num.toString().split(".");
+//     num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+//     return num_parts.join(".");
+//   }
+
+//   document.write(`<h4> ${thousands_separators(1000)} </h4>`);
+//     document.write(`<h4> ${thousands_separators(10000.23)} </h4>`);
+// document.write(`<h4> ${thousands_separators(100000)} </h4>`);
+
+
+// // Program 8:
+
+
+// function removeVowels(str) {
+//     return str.replace(/[aeiou]/gi, '@');
+//   }
+
+//   document.write(`<h4> ${removeVowels("Asma")} </h4>`);
+//   document.write(`<h4> ${removeVowels("Sarika")} </h4>`);
+//   document.write(`<h4> ${removeVowels("Gauri")} </h4>`);
+
+
+
+// Program 9:
+
+// function is_html(str)
+// {
+//  regexp = /<([a-z]+) *[^/]*?>/;
+  
+//         if (regexp.test(str))
+//           {
+//             return true;
+//           }
+//         else
+//           {
+//             return false;
+//           }
+// }
+
+// document.write(`<h4> ${is_html('')} </h4>`);
+
+// document.write(`<h4> ${is_html('<h1>')} </h4>`);
+
+// document.write(`<h4> ${is_html('.selector')} </h4>`);
+
+
+// Program 10:
+
+function is_socialSecurity_Number(str)
+{
+ regexp = /^(?!000|666)[0-8][0-9]{2}-(?!00)[0-9]{2}-(?!0000)[0-9]{4}$/;
+  
+        if (regexp.test(str))
+          {
+            return true;
+          }
+        else
+          {
+            return false;
+          }
+}
+document.write(`<h4> ${is_socialSecurity_Number("019-90-5680")} </h4>`);
+
+document.write(`<h4> ${is_socialSecurity_Number("K8V-3Y1")} </h4>`);
+
+
+
+
+
+
+
+
+
+
+

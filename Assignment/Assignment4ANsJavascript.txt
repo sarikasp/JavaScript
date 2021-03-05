@@ -1,0 +1,124 @@
+// // Program 1:
+
+// var array = ['rose', 'lotus', 'orchid', 'jasmine', 'lily', 'daisy'];
+// var flower = prompt("Please Enter the flower name...!!!");
+// function find(flower)
+// {
+//        if(array.indexOf(flower) > -1)
+//              {
+//                 document.write(`<h3>${flower} is Available in the Array..</h3>`);   
+//              }
+//         else
+//             {
+//                 document.write(`<h3>${flower} is Not Available in the Array...</h3>`);  
+//              }
+// }
+// find(flower);
+
+// // // Program 2:
+
+// var fruitsArray = ["Apple", "Banana", "Cherry", "Orange"];
+// var plusFruits = fruitsArray.join(" + ")
+// var spaceFruits = fruitsArray.join(" ")
+// var commaFruits = fruitsArray.join(" , ")
+// document.write(`<b> " ${commaFruits} " </b>`);
+// document.write("<br>");
+// document.write(`<b> " ${spaceFruits} " </b>`);
+// document.write("<br>");
+// document.write(` <b> "  ${plusFruits} " </b>`);
+
+
+// // Program 3:
+ 
+// // // way 1:
+
+// var num = [1,2,3,4,5];
+
+// document.write(`<h2>${num} </h2>`);
+
+// var sum = 0;
+// function sumOfCube1(num)
+// {
+//     for(var i = 1 ; i<= num.length; i++)    
+//     {
+//             sum += Math.pow(i,3);   
+//     }
+//     return sum;
+// }
+// document.write(`<h2> ${sumOfCube1(num)} </h2>`);
+
+// // // way 2:
+
+// function sumOfCube2(n)
+// { 
+//     sum1 = 0;
+//     for(var i = 1 ; i<= n; i++)    
+//     {
+//             sum1 += Math.pow(i,3);   
+//     }
+//     return sum1;
+// }
+// document.write(`<h2> ${sumOfCube2(5)} </h2>`);
+
+// // // Way 3:
+
+// function sumOfCube3(n)
+// {
+//     var sum2 = 0;
+//     for(var i = 1 ; i<= n; i++)    
+//     {
+//             sum2 += i ** 3;  
+//     }
+//     return sum2;
+// }
+// document.write(`<h2> ${sumOfCube3(5)} </h2>`);
+
+
+// // Program 4:
+
+// flowers = ['Rose', 'Lily', 'Tulip', 'Orchid', 'Rose', 'Orchid', 'Daisy', 'Orchid'];
+
+// var t1 = 1;
+// var t2= 0;
+// var item;
+
+// for(var i = 0; i< flowers.length; i++)
+// {
+//     for(var j = i; j< flowers.length; j++) 
+//     {
+//         if(flowers[i] == flowers[j]) 
+//             {
+//                 t2++;
+//             }
+//         if(t1 < t2)
+//             {
+//                 t1 = t2;
+//                 item = flowers[i];
+//             }
+//     }
+//     t2 = 0;
+// }
+// document.write(`<h2> ${item} - ${t1} times </h2>`);
+
+
+// // Program 5:
+
+
+// var firstName = ['Rajesh', 'Kirti', 'Pallavi', 'Aman']
+// var lastName = ['Menon', 'Sharma', 'Roy', 'Varma'];
+// var fullName = [];
+
+// for(var i = 0 ; i< firstName.length; i++)
+// {
+//         fullName.push((firstName[i] +' ').concat(lastName[i]))
+// }
+
+// for(var j = 0 ; j< fullName.length; j++)
+// {
+//    document.write("<br>");
+//    document.write(`<h3>" My Name is  ${fullName[j]} "<//h3>`);   
+// }
+
+
+
+
